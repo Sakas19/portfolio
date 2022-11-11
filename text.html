@@ -8,16 +8,12 @@
         <script src="https://kit.fontawesome.com/72235765e3.js" crossorigin="anonymous"></script>       
     </head>
    
-        <body>
-     <!-- jag har valt att dela in sidan i sektioner – så kallade <section> taggar.
-      De funkar ungefär på samma sätt som div-taggen. Det är för att man enkelt
-      ska kunna se vilken kod som hör till vilken del av sidan. -->
-
+      <body>
       <div class="header">
         <div class="navbar">
           <nav>
             <ul id="menulist">
-              <li><a href=" ">About-me</a></li>
+              <li><a href="text.html">About-me</a></li>
               <li><a href="projects.html">Project</a></li>
               <li><a href=" ">Skills</a></li>
               <li><a href="contact-me.html">Contact me</a></li>
@@ -27,31 +23,28 @@
       </div>
 
     <div class="about-me">
-    <!--Här ska jag lägga en bild av mig själv, kom ihåg att lägga den
-          i samma mapp som projektet. -->
-        <!--<img src="IMG_2252.jpg" alt="picture of sarvnaz"/>
-        <h1>Hi, I'm sarvnaz!</h1>
-        <h2>I am a failded nursing student, part time salesperson at Ikea.</h2>
-        <a class="button" href="www.linkedin.com">Say hi on Linkedin</a>
-    </div> -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="IMG_2252.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <div class="flip-container">
+      <div class="flip-inner-container">
+        <div class="flip-front">
+          <img src="IMG_2252.jpg" />
         </div>
-        <div class="flip-card-back">
-          <h1>John Doe</h1> 
-          <p>Architect & Engineer</p> 
-          <p>We love that guy</p>
+        <div class="flip-back">
+          <div class="profile-image">
+            <h2>Sarvnaz</h2>
+            <p>Web Developer | Content Creator | Youtuber</p>
+
+            <ul>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
-      <div class="greatness">
-        <h2>Top 3 things that I'm great at:</h2>
-      </div>
-      <div class="area">
-        <h3>1. Project management</h3>
+    <div class="grid-container">  
+      <div class="Project-management">
+        <h3>Project management</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -59,36 +52,44 @@
           commodo consequat.
         </p>
       </div>
-      <div class="area">
-        <h3>2. Coding</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </p>
       </div>
-      <div class="area">
-        <h3>3. Online shopping</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </p>
+      <div class="grid-container"> 
+        <div class="coding">
+          <h3>Coding</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+        </div>
       </div>
-      </section>
-      <div class="area">
-      <h2>Skills</h2>
-      <i class="fa-brands fa-html5"></i>
-      <i class="fa-brands fa-css"></i>
-      <i class="fa-brands fa-python"></i>
-      <i class="fa-brands fa-java"></i>
+      <div class="grid-container"> 
+        <div class="online-shopping">
+          <h3>Online shopping</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+        </div>
       </div>
-      <footer>
-        <p>&#169;Copyright </p>
-        <p>About-Sarvnaz</p>
-      </footer>
-        </body>
-    
+      <div class="grid-container"> 
+        <div class="Skills">
+          <h2>Skills</h2>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css"></i>
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-java"></i>
+          </div> 
+      </div>
+      <div class="grid-container"> 
+        <footer>
+          <p>&#169;Copyright </p>
+          <p>About-Sarvnaz</p>
+        </footer> 
+      </div>
+      </body>
 </html>
+         

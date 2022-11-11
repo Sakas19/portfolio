@@ -1,8 +1,24 @@
+:root {
+  --pale-pink: #f7d1cdff;
+  --queen-pink: #e8c2caff;
+  --thistle: #d1b3c4ff;
+  --glossy-grape: #b392acff;
+  --old-lavender: #735d78ff;
+  --independence: #3a405aff;
+  --light-steel-blue: #aec5ebff;
+  --champagne-pink: #f9dec9ff;
+  --melon: #e9afa3ff;
+  }
+
+* {
+  margin: 0;
+}
 .header {
     width: 100%;
     min-height: 40px;
     padding-left: 14%;
-    padding-right: 14%;
+    padding-right: 1%;
+    padding-top: 1%;
     box-sizing: border-box;
     overflow: hidden;
     background-color: white;
@@ -39,3 +55,109 @@
   nav ul li a:hover{
     color: var(--pale-pink);
   } 
+
+body {
+    color: #333;
+    font-size: 13px;
+    background-color: #3a405aff;
+    font-family: sans-serif;
+    overflow:auto;
+}
+
+.container {
+    width: 50%;
+    max-width: 960px;
+    margin: 30px auto;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color:#f7d1cdff;
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+
+ul {
+   list-style: none; 
+   margin-bottom: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+nav > ul > li > a:hover, .current a {
+    color: #fff;
+    background-color: #27A4DD;
+}
+
+#projects > ul > li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 23%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Padding stays within the width */
+    box-sizing: border-box;
+    position: relative;
+    opacity: 0.7;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+#projects > ul > li:hover {
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 40px 10px;
+    display: none;
+    box-sizing: border-box;
+}
+
+.gallery > img {
+    max-height: 100%;
+    width: auto;
+}
+
+.close i {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.bar {
+    display: block;
+    position: absolute;
+    top: 13px;
+    float: left;
+    width: 30px;
+    border-bottom: 4px solid #fff;
+    transform: rotate(45deg);
+}
+
+.bar:first-child {
+    transform: rotate(-45deg);
+}

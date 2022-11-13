@@ -6,9 +6,6 @@
     --glossy-grape: #b392acff;
     --old-lavender: #735d78ff;
     --independence: #3a405aff;
-    --light-steel-blue: #aec5ebff;
-    --champagne-pink: #f9dec9ff;
-    --melon: #e9afa3ff;
     }
     
     html {   
@@ -205,7 +202,7 @@
     .ease {
         width: 0px;
         height: 74px;
-        background-color: #fbfbfb;
+        background-color: white;
         -webkit-transition: .3s ease;
         -moz-transition: .3s ease;
         -o-transition: .3s ease;

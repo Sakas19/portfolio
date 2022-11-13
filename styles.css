@@ -6,7 +6,7 @@
     --old-lavender: #735d78ff;
     --independence: #3a405aff;  
     }
-    /* Här är styling som gäller för hela sidan */
+
     * {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -20,32 +20,6 @@
       color: white;
       text-align: center;
     }
-
-    /* Här är styling för greatness sektionen */
-    
-    .grid-container {
-      display: grid;
-      gap: 50px;
-      grid-template-rows: auto auto auto;
-      background-color: #b392ac;
-      border: solid 20px var(--independence);
-      border-radius: 4em;
-    }
-    
-    .grid-item {
-      background-color: white;
-      border: 10px solid white;
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-    }
-    /* Här är styling för footern på sidan */
-      footer {
-        text-align: center;
-        padding: 20px;
-        color: white;
-      }
-    
     
     .navbar {
         width: 100%;
@@ -74,12 +48,23 @@
         color: var(--pale-pink);
       }
 
-    .skills {
-      padding: 20px 30px;
-      width: 50%;
-      margin: 0 auto;
-      color: white;
-     }
+          
+    .grid-container {
+      display: grid;
+      gap: 50px;
+      grid-template-rows: auto auto auto;
+      background-color: #b392ac;
+      border: solid 20px var(--independence);
+      border-radius: 4em;
+    }
+    
+    .grid-item {
+      background-color: white;
+      border: 10px solid white;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
 
      .flip-container {
        width: 280px;
@@ -301,5 +286,15 @@
     } 
 
     .skills {
-      font-size: x-large;
+      padding: 20px 30px;
+      width: 50%;
+      margin: 0 auto;
+      color: white;
+     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: white;
     }
+  

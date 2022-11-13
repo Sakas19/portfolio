@@ -5,10 +5,7 @@
   --glossy-grape: #b392acff;
   --old-lavender: #735d78ff;
   --independence: #3a405aff;
-  --light-steel-blue: #aec5ebff;
-  --champagne-pink: #f9dec9ff;
-  --melon: #e9afa3ff;
-  }
+}
 
 * {
   margin: 0;
@@ -59,7 +56,7 @@
 body {
     color: #333;
     font-size: 13px;
-    background-color: #3a405aff;
+    background-color:var(--old-lavender);
     font-family: sans-serif;
     overflow:auto;
 }
@@ -76,7 +73,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 43px;
-    color:#f7d1cdff;
+    color:var(--thistle);
 }
 
 nav {
@@ -106,7 +103,6 @@ nav > ul > li > a:hover, .current a {
     height: auto;
     cursor: pointer;
     border-radius: 5px;
-    /* Padding stays within the width */
     box-sizing: border-box;
     position: relative;
     opacity: 0.7;

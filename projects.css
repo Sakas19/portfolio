@@ -73,7 +73,9 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 43px;
     color:#f7d1cdff;
 }
 
@@ -93,8 +95,7 @@ ul {
 }
 
 nav > ul > li > a:hover, .current a {
-    color: #fff;
-    background-color: #27A4DD;
+    color: var(--pale-pink);
 }
 
 #projects > ul > li {

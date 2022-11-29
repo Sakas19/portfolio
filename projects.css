@@ -6,155 +6,125 @@
   --old-lavender: #735d78ff;
   --independence: #3a405aff;
 }
+html {   
+  background-color: #3a405aff;
+  background-size: cover;
+  height:100%;
+}
 
 * {
   margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
+ 
 .header {
-    width: 100%;
-    min-height: 40px;
-    padding-left: 14%;
-    padding-right: 1%;
-    padding-top: 1%;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-color: white;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center; 
-  }
-  
-  .logo {
-    width: 100px;
-    cursor: pointer;
-  }
-  
-  nav {
-    flex: 1;
-    text-align: right;
-  }
-  
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: var(--old-lavender);
-    font-size: 14px;
-  }
-  
-  nav ul li a:hover{
-    color: var(--pale-pink);
-  } 
-
-body {
-    color: #333;
-    font-size: 13px;
-    background-color:var(--old-lavender);
-    font-family: sans-serif;
-    overflow:auto;
+  width: 100%;
+  min-height: 40px;
+  padding-left: 14%;
+  padding-right: 0%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: white;
 }
 
-.container {
-    width: 50%;
-    max-width: 960px;
-    margin: 30px auto;
-    position: relative;
-    text-align: center;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center; 
 }
 
-h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 43px;
-    color:var(--thistle);
+.logo {
+  width: 100px;
+  cursor: pointer;
 }
 
 nav {
-    display: block;
-    width: 100%;
+  flex: 1;
+  text-align: right;
 }
 
-ul {
-   list-style: none; 
-   margin-bottom: 20px;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: var(--old-lavender);
+  font-size: 14px;
+}
+
+nav ul li a:hover{
+  color: var(--pale-pink);
+} 
+
+.active{
+  color: var(--thistle);
+  font-weight: bold;
+  }
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 43px;
+  color:var(--thistle);
+}
 
 .hidden {
-    display: none;
-}
-
-nav > ul > li > a:hover, .current a {
-    color: var(--pale-pink);
+  display: none;
 }
 
 #projects > ul > li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    width: 23%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 5px;
-    box-sizing: border-box;
-    position: relative;
-    opacity: 0.7;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 23%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0.7;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 #projects > ul > li:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .gallery {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    padding: 40px 10px;
-    display: none;
-    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  padding: 40px 10px;
+  display: none;
+  box-sizing: border-box;
 }
 
 .gallery > img {
-    max-height: 100%;
-    width: auto;
+  max-height: 100%;
+  width: auto;
 }
 
 .close i {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    height: 30px;
-    width: 30px;
-}
-
-.bar {
-    display: block;
-    position: absolute;
-    top: 13px;
-    float: left;
-    width: 30px;
-    border-bottom: 4px solid #fff;
-    transform: rotate(45deg);
-}
-
-.bar:first-child {
-    transform: rotate(-45deg);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
 }

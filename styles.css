@@ -47,7 +47,12 @@
     nav ul li a:hover{
         color: var(--pale-pink);
       }
-
+    
+    
+    .active{
+    color: var(--thistle);
+    font-weight: bold;
+    }
           
     .grid-container {
       display: grid;

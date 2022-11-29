@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles-contact.css">
 </head>
-
 <body>
-
   <div class="header">
     <div class="navbar">
       <nav>
@@ -16,20 +14,21 @@
             <li><a href="text.html">About-me</a></li>
             <li><a href="projects.html">Project</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="contact-me.html">Contact me</a></li>
+            <li><a class="active" href="contact-me.html">Contact me</a></li>
           </ul>
       </nav>
     </div>
  </div>
+ <h1 class="heading">Contact me</h1>
     <div class="form">
         <form action="mailto: Sarvnaz.kasaei@gmail.com" method="post">
             <div id="form-main">
             <div id="form-div">
               <p class="name">
-                  <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+                  <input name="name" type="text" class="feedback-input" placeholder="Name" id="name"/>
                 </p>
                 <p class="email">
-                  <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
+                  <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" required/>
                 </p>
                 <p class="text">
                   <textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>

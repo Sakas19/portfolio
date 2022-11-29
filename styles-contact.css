@@ -8,20 +8,20 @@
     --independence: #3a405aff;
     }
     
-    html {   
+  html {   
         background-color: #3a405aff;
         background-size: cover;
         height:100%;
-      }
+        }
 
-    * {
+  * {
         margin: 0;
         padding: 0;
         font-family: 'Montserrat', sans-serif;
         box-sizing: border-box;
       }
        
-      .header {
+  .header {
         width: 100%;
         min-height: 40px;
         padding-left: 14%;
@@ -33,50 +33,54 @@
         background-color: white;
       }
 
-      .navbar {
+  .navbar {
         width: 100%;
         display: flex;
         align-items: center; 
       }
       
-      .logo {
+  .logo {
         width: 100px;
         cursor: pointer;
       }
-      
-      nav {
+    
+  nav {
         flex: 1;
         text-align: right;
       }
       
-      nav ul li {
+  nav ul li {
         list-style: none;
         display: inline-block;
         margin-right: 30px;
       }
       
-      nav ul li a {
+  nav ul li a {
         text-decoration: none;
         color: var(--old-lavender);
         font-size: 14px;
       }
       
-      nav ul li a:hover{
+  nav ul li a:hover{
         color: var(--pale-pink);
       } 
-      
 
-      #feedback-page{
+  .active{
+        color: var(--thistle);
+        font-weight: bold;
+      }
+      
+  #feedback-page{
         text-align:center;
-    }
+      }
     
-    #form-main{
+  #form-main{
         width:100%;
         float:left;
         padding-top:110px;
-    }
+      }
     
-    #form-div {
+  #form-div {
         background-color: var(--pale-pink);
         padding-left:35px;
         padding-right:35px;
@@ -90,9 +94,9 @@
         margin-left: -260px;
         border-radius: 7px;
         border-radius: 7px;
-    }
+      }
     
-    .feedback-input {
+  .feedback-input {
         color:var(--old-lavender);
         font-family: Helvetica;
         font-weight:500;
@@ -108,71 +112,71 @@
         -ms-box-sizing: border-box;
         box-sizing: border-box;
         border: 3px solid var(--pale-pink);
-    }
-    
-    .feedback-input:focus{
+      }
+
+  .feedback-input:focus{
         background: #fff;
         box-shadow: 0;
         border: 3px solid var(--old-lavender);
         color: var(--old-lavender);
         outline: none;
         padding: 13px 13px 13px 54px;
-    }
+      }
     
-    .focused{
+  .focused{
         color: var(--queen-pink);
         border:var(--queen-pink) solid 3px;
-    }
+      }
     
-    #name{
+  #name{
         background-color: white;
         background-size: 30px 30px;
         background-position: 11px 8px;
         background-repeat: no-repeat;
-    }
+      }
     
-    #name:focus{
+  #name:focus{
         background-color: white ;
         background-size: 30px 30px;
         background-position: 8px 5px;
         background-position: 11px 8px;
         background-repeat: no-repeat;
-    }
+      }
     
-    #email{
+  #email{
         background-color:white;
         background-size: 30px 30px;
         background-position: 11px 8px;
         background-repeat: no-repeat;
     }
     
-    #email:focus{
+  #email:focus{
         background-image: white;
         background-size: 30px 30px;
         background-position: 11px 8px;
         background-repeat: no-repeat;
     }
     
-    #comment{
+  #comment{
         background-color: white;
         background-size: 30px 30px;
         background-position: 11px 8px;
         background-repeat: no-repeat;
     }
     
-    textarea {
+  textarea {
         width: 100%;
         height: 150px;
         line-height: 150%;
         resize:vertical;
     }
     
-    input:hover, textarea:hover,
-    input:focus, textarea:focus {
+  input:hover, textarea:hover,
+  input:focus, textarea:focus {
         background-color:white;
     }
     
-    #button{
+  #button{
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         float:left;
         width: 100%;
@@ -190,16 +194,16 @@
         font-weight:700;
     }
     
-    #button:hover{
+  #button:hover{
         background-color: white;
         color: var(--glossy-grape);
     }
         
-    .submit:hover {
+  .submit:hover {
         color: var(--old-lavender);
     }
         
-    .ease {
+  .ease {
         width: 0px;
         height: 74px;
         background-color: white;
@@ -210,12 +214,12 @@
         transition: .3s ease;
     }
     
-    .submit:hover .ease{
+  .submit:hover .ease{
       width:100%;
       background-color:white;
     }
     
-    @media only screen and (max-width: 580px) {
+  @media only screen and (max-width: 580px) {
         #form-div{
             left: 3%;
             margin-right: 3%;
@@ -224,4 +228,8 @@
             padding-left: 3%;
             padding-right: 3%;
         }
+    }
+
+  h1 {
+      color:var(--thistle);
     }

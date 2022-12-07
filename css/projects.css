@@ -1,11 +1,3 @@
-:root {
-  --pale-pink: #f7d1cdff;
-  --queen-pink: #e8c2caff;
-  --thistle: #d1b3c4ff;
-  --glossy-grape: #b392acff;
-  --old-lavender: #735d78ff;
-  --independence: #3a405aff;
-}
 html {   
   background-color: #3a405aff;
   background-size: cover;
@@ -19,29 +11,6 @@ html {
   box-sizing: border-box;
 }
  
-.header {
-  width: 100%;
-  min-height: 40px;
-  padding-left: 14%;
-  padding-right: 0%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: white;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
-  align-items: center; 
-}
-
-.logo {
-  width: 100px;
-  cursor: pointer;
-}
-
 nav {
   flex: 1;
   text-align: right;

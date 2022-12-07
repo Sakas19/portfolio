@@ -17,18 +17,18 @@ GODKÄNT:
 
 3 separate pages: ✅
 
-A header with a page title on every page: ❌
-  "Project" has a title, but none of the other pages. Google expects each page to have a unique h1.
-  Be careful using % for padding etc when the element is a child of body. % takes their value from the parent - in styles.css the header has 1% top and bottom. This turns into 1% of the height of the body, and because different pages have different content, the body will be diferent heights. For example, the body on the about-me page is 3 times as largge as the body on the projects page - this means the padding in the header is larger on the about-me page. You can notice the different when changing pages.
+A header with a page title on every page: ✅
+  UPDATED 30-11-2022
+  Great!
 
 A navigational menu every page with links to the other pages: ✅
 
 Contact form:
     Email: ✅
     Message: ✅
-    Required: ❌
+    Required: ✅ 1/2
     Mail to: ✅
-      Need to add the attribute "required" to each input
+      Need to add the attribute "required" to each input - emial has it but not comment
 
 RWD:
     Desktop: ✅
@@ -42,7 +42,10 @@ External CSS: ✅
 VÄLGODKÄNT:
 -------------------------------------
 
-Current page indication in the menu: ❌
+Current page indication in the menu: ✅
+ UPDATED 30-11-2022
+  Fixed, looks good.
+
   The way to fix this is to add a class - for example "active" - on the relevant menu item for each page, and add some styling to that class
 
 Responsive Image: ✅
@@ -53,19 +56,59 @@ RWD:
   Flex/Grid: ✅
 
 Separate CSS: ✅ ❌
-  You should have a "css" or "styles" directory that holds all your style sheets
-  Although you do use separate css files, there is dublicated contetn inside them. For example the header and navigation styling classes - .header and .navbar - are in all 3 css files (and it looks like all the navbar styling is repeated twice in styles.css!)
-  Common elemnts like the header and navigation should be inside one "general" file such as styles.css, then that file should be imported in each html file.
-  Individual pager stylesheets should only have the styles that are either unique or different on those pages. 
-  This might mean you have very short css files, and that is the preferred way. It makes it very asy to find the specific styles for a specific class.
+  The css itself is good, but needs to be organised a little bit better.
+
+  The first thng is to create folders to hold the different kinds of files, so make an html folder for the html files, a css folder for css and an images folder.
+
+  The move all the "common" styles - the styling that applies to every page - to a general.css file. In your css files, you are repeating things, eg the ::root { ... } element is in all 3 files, so is  .header, .logo, and .navbar and its related elements. By creating one general file for common eleemnts, you will be able to remove about 70 lines from each of the other 3 files
+
   Semantic: ✅
 
 Semantic Element naming: ✅
-  Same as with css, all the html should bbe inside an html directory. Images shoul be in an images directory.
+  Same as with css, all the html should bbe inside an html directory. Images should be in an images directory.
 
 Code Style:
   HTML: ✅ ❌
    General good, though the indentation is a bit messed up. It should have a consistent 2 or 4 space indentation
-   text.html is missing an opening body tag, while  projects has 2 opening body tags! 
+   
+   For example,this  from contact-me.html:
+
+   <h1 class="heading">Contact me</h1>
+    <div class="form">
+        <form action="mailto: Sarvnaz.kasaei@gmail.com" method="post">
+            <div id="form-main">
+            <div id="form-div">
+              <p class="name">
+                  <input name="name" type="text" class="feedback-input" placeholder="Name" id="name"/>
+                </p>
+  
+  Should be indented like this using 4 indents on every new element:
+
+  <h1 class="heading">Contact me</h1>
+  <div class="form">
+      <form action="mailto: Sarvnaz.kasaei@gmail.com" method="post">
+          <div id="form-main">
+              <div id="form-div">
+                  <p class="name">
+                      <input name="name" type="text" class="feedback-input" placeholder="Name" id="name"/>
+                  </p>
   CSS: ✅
-    Very nice!
+    Very nice! Theres a bit of inconsistent indentation and you should always have a space between the selector name and the opening
+
+    With css the selector should always start at the first column of the page, and the closing } should be at the same level with all the properties indented 4 spaces - eg from styles-contact.css line 131:
+
+  #name{
+        background-color: white;
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+      }
+
+      should be:
+
+#name {
+    background-color: white;
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}

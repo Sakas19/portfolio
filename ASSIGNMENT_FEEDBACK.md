@@ -1,3 +1,15 @@
+Updated 7-12-2022
+
+Good Morning Sharvnaz!
+
+Great work, thanks for taking the time to look at the feedback and make changes.
+
+The only thing I would like you to do is to look at the indenting on the CSS.
+
+Everything else is fine, so I'm happy to say you have met the requirements for a VG grade. Well done!
+
+*************************************
+
 Hi Sharvnaz!
 
 Nice work!
@@ -28,7 +40,7 @@ Contact form:
     Message: ✅
     Required: ✅ 1/2
     Mail to: ✅
-      Need to add the attribute "required" to each input - emial has it but not comment
+      Need to add the attribute "required" to each input - email has it but not comment
 
 RWD:
     Desktop: ✅
@@ -55,7 +67,7 @@ RWD:
     Probably could use this for styling the mobile menu
   Flex/Grid: ✅
 
-Separate CSS: ✅ ❌
+Separate CSS: ✅ Fixed! 7-12-2002
   The css itself is good, but needs to be organised a little bit better.
 
   The first thng is to create folders to hold the different kinds of files, so make an html folder for the html files, a css folder for css and an images folder.
